@@ -1,0 +1,35 @@
+{
+  "name": "genpark-agent-task-evaluation-benchmark-harness-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Real-world AI agent task benchmark & automated evaluation harness synthesizer.",
+  "author": "genpark",
+  "category": "developer",
+  "tags": [
+    "agent-evaluation",
+    "benchmark-harness",
+    "eval-synthesizer",
+    "llm-testing",
+    "ph-august19"
+  ],
+  "inputs": {
+    "agent_capability_target": {
+      "type": "string"
+    },
+    "eval_scenarios_count": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "benchmark_pass_rate_pct": {
+      "type": "number"
+    },
+    "scenarios_evaluated": {
+      "type": "integer"
+    },
+    "evaluation_summary": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
